@@ -1,3 +1,24 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-scopes = "write_products"
+client_id = "6e2008644f88255b9750c74ded318118"
+name = "DUNG_IG_DEV"
+handle = "dung_ig_dev"
+application_url = "https://terminal-sells-matching-expenses.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "dung-ig-dev.myshopify.com"
+
+[auth]
+redirect_urls = [
+  "https://terminal-sells-matching-expenses.trycloudflare.com/auth/callback",
+  "https://terminal-sells-matching-expenses.trycloudflare.com/auth/shopify/callback",
+  "https://terminal-sells-matching-expenses.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
